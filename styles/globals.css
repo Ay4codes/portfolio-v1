@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-nav-n-head-wrapper {
+    background: url(https://swipe.ng/hero-dotted.aa4ca68ac880ff90a67f.svg),
+    linear-gradient(113.16deg,rgba(255, 207, 253, 0.5) -3.15%,#c4c4c400 40.16%,#e5f6fa 105.41%);
+    height: 100vh;
+}

@@ -10,8 +10,11 @@ export default function Home() {
         <title>Ayomide Ishola || @ay4codes</title>
         <meta name="description" content="" />
       </Head>
-      <NavBar />
-      <Homehead />
+      <div className='home-nav-n-head-wrapper'>
+        <NavBar />
+        <Homehead />
+      </div>
+      <p>gello</p>
     </div>
   )
 }
