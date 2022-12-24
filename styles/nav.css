@@ -1,5 +1,4 @@
-.nav-bar-main, .home-head-wrapper {
-    
+.nav-bar-main, .home-head-wrapper, .home-second-section-wrapper {
     padding-inline: 5%;
 }
 .logo-wrapper img {
@@ -28,13 +27,13 @@
 
 
 @media (min-width: 1440px) {
-    .nav-bar-main, .home-head-wrapper {
+    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper {
         padding-inline: 8%;
     }
 }
 
 @media (min-width: 1800px) {
-    .nav-bar-main, .home-head-wrapper {
+    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper {
         padding-inline: 13%;
     }
 }

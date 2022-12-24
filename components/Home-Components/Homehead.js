@@ -1,12 +1,18 @@
 import Link from "next/link"
 import Typewriter from 'typewriter-effect';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 export default function Homehead() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className="home-head-wrapper pt-[100px]">
             <div className="home-head-inner justify-between items-center mb-8">
-                <div className="home-head-inner-content">
+                <div data-aos="fade-right" className="home-head-inner-content">
                     <div>
                         <div className="intro-container">
                             <h3>Hello! World</h3>
@@ -26,22 +32,22 @@ export default function Homehead() {
                         </div>
                     </div>
                 </div>
-                <div className="home-head-inner-content">
+                <div data-aos="fade-left" className="home-head-inner-content">
                     <img src="/profile.png" alt="Portfolio Profile"/>
                 </div>
             </div>
             <div className="home-head-btm-container flex items-center justify-between w-full">
-                <img className="ml-[-180px] mt-[-40px]" src="/btm-pink.png" alt="btm-pink-icon" />
+                <img data-aos="zoom-in-right" className="ml-[-180px] mt-[-40px]" src="/btm-pink.png" alt="btm-pink-icon" />
                 <div className={'typewriter_container flex items-center gap-3'}>
                     <p className="">{"I’m"}</p>
                     <Typewriter
                         options={{
-                        strings: ['a Full Stack Developer', 'a Data Analyst'],
+                        strings: ['a Full Stack Developer'],
                         autoStart: true,
                         loop: true,}}
                     />
                 </div>
-                <img className="mr-[-180px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
+                <img data-aos="zoom-in-left" className="mr-[-180px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
             </div>
         </div>
     )

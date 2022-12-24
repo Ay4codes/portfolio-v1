@@ -1,8 +1,14 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 export default function NavBar() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
-        <div className="nav-bar-main w-full pt-12" >
+        <div data-aos="fade-down" className="nav-bar-main w-full pt-12" >
             <div className="nav-innner flex items-center justify-between">
                 <div className="logo-wrapper">
                     <img width={60} height={60} src="/logo.png" alt="Ay4codes Logo" />

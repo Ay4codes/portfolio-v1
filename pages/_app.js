@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import '../styles/nav.css'
-import '../styles/homehead.css'
+import '../styles/home.css'
 
 import Head from 'next/head'
 
