@@ -1,0 +1,36 @@
+.nav-bar-main, .home-head-wrapper {
+    background: url(https://swipe.ng/hero-dotted.aa4ca68ac880ff90a67f.svg),
+    linear-gradient(113.16deg,rgba(255, 207, 253, 0.5) -3.15%,#c4c4c400 40.16%,#e5f6fa 105.41%);
+    padding-inline: 5%;
+}
+
+.nav-innner {
+    /* justify-content: space-between; */
+}
+.lets-chat-btn button {
+    border: 3px solid #ff8c92;
+    background-color: #fff;
+}
+.navigator-lists li span {
+    font-family: 'Bakbak One', cursive;
+    font-size: 20px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.navigator-lists li span:hover {
+    color: #ff8c92;
+}
+
+
+@media (min-width: 1440px) {
+    .nav-bar-main, .home-head-wrapper {
+        padding-inline: 8%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .nav-bar-main, .home-head-wrapper {
+        padding-inline: 13%;
+    }
+}
