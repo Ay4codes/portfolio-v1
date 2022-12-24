@@ -3,7 +3,9 @@
     linear-gradient(113.16deg,rgba(255, 207, 253, 0.5) -3.15%,#c4c4c400 40.16%,#e5f6fa 105.41%);
     padding-inline: 5%;
 }
-
+.logo-wrapper img {
+    width: 60px ;
+}
 .nav-innner {
     /* justify-content: space-between; */
 }
