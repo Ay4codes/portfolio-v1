@@ -67,6 +67,10 @@
     /* font-family: 'Roboto Serif', serif; */
     font-family: 'Montserrat', sans-serif;
 }
-.typewriter_container p span {
+.typewriter_container span {
     color: #ff8c92;
+    font-size: clamp(1.5rem, 1.1vw + 1rem, 1.7rem);
+    font-weight: 600;
+    /* font-family: 'Roboto Serif', serif; */
+    font-family: 'Montserrat', sans-serif;
 }
