@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Typewriter from 'typewriter-effect';
+
 
 export default function Homehead() {
     return (
@@ -30,6 +32,19 @@ export default function Homehead() {
             </div>
             <div className="home-head-btm-container flex items-center justify-between w-full">
                 <img className="ml-[-180px] mt-[-40px]" src="/btm-pink.png" alt="btm-pink-icon" />
+                <div className={'typewriter_container'}>
+                    <p className=" flex items-center gap-3">I’m 
+                        <span>
+                            <Typewriter
+                                options={{
+                                strings: ['a Full Stack Developer', 'a Data Analyst'],
+                                autoStart: true,
+                                loop: true,}}
+                            />
+                        </span>
+                    </p>
+                    
+                </div>
                 <img className="mr-[-180px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
             </div>
         </div>
