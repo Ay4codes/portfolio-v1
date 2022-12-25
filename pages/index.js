@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import NavBar from '../components/Global-components/Navbar';
 import Homehead from '../components/Home-Components/Homehead';
 import Home2ndSection from '../components/Home-Components/Home-2nd-section';
+import Home3rdSection from '../components/Home-Components/Home-3rd-section';
+
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         <Homehead />
       </div>
       <Home2ndSection />
+      <Home3rdSection />
     </div>
   )
 }

@@ -1,5 +1,8 @@
 import SectionTitle from "../Global-components/SectionTitle"
 import Expertise from "../Global-components/Expertise"
+import Link from "next/link"
+import ContactMeBtn from "../Global-components/ContactmeBtn"
+
 
 export default function Home2ndSection() {
     return (
@@ -25,13 +28,14 @@ export default function Home2ndSection() {
                     </div>
                     <div className="w-full">
                         <Expertise
-                            img={'/api-icon.png'}
-                            alt={'Api Icon'}
-                            title={'Api Development'}
-                            desc={'Desc'}
+                            img={'/analysis-icon.png'}
+                            alt={'Data Analysis Icon'}
+                            title={'Data Analysis'}
+                            desc={'Data analysis is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.'}
                         />
                     </div>
                 </div>
+                <ContactMeBtn />
             </div>
         </div>
     )
