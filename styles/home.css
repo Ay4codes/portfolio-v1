@@ -246,6 +246,17 @@
     margin-top: 30px;
 }
 .home-4th-section-inner img {
-    /* width: 80%;
-    margin-inline: auto; */
+    width: 80%;
+    margin-inline: auto;
+}
+.section-title-btn-icon2 {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.home-4th-section-inner h2 {
+    font-family: 'Bakbak One', cursive;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 3.5rem;
+    color: #fff;
 }
