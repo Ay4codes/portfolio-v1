@@ -1,6 +1,7 @@
 import SectionTitle from "../Global-components/SectionTitle"
 import Project from "../Global-components/Portfolio-item"
 import SectionBtn from "../Global-components/SectionBtn"
+import Link from "next/link"
 
 export default function Home3rdSection() {
     return (
@@ -14,7 +15,15 @@ export default function Home3rdSection() {
                     </div>
                 </div>
             </div>
-            <SectionBtn linkTo={'/portfolio'} title={'View Portfolio'} />
+            <SectionBtn width={'180px'} linkTo={'/portfolio'} title={'View Portfolio'} />
+            <div className="mt-11 socials-wrapper">
+                <p className="text-center">Follow me and check my portfolio to discover more great works.</p>
+                <div className="w-full flex justify-center gap-5 mt-5">
+                    <Link target="_blank" rel="noopener noreferrer" href={'https://www.instagram.com/haryormeed_256/'}><img width={70} className={'rounded-xl'} src="/instagram.svg" /></Link>
+                    <Link target="_blank" rel="noopener noreferrer" href={'https://www.twitter.com/ay4codes'}><img width={70} className={'rounded-xl'} src="/twitter.png" /></Link>
+                    <Link target="_blank" rel="noopener noreferrer" href={'https://www.github.com/ay4codes'}><img width={70} className={'rounded-xl'} src="/github.png" /></Link>
+                </div>
+            </div>
         </div>
     )
 }

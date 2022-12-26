@@ -35,7 +35,7 @@ export default function Home2ndSection() {
                         />
                     </div>
                 </div>
-                <SectionBtn linkTo={'/contact'} title={'Contact me'} />
+                <SectionBtn width={'150px'} linkTo={'/contact'} title={'Contact me'} />
             </div>
         </div>
     )
