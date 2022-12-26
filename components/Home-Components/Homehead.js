@@ -23,10 +23,10 @@ export default function Homehead() {
                             <p>Am a Full Stack Developer based in Lagos, Nigeria. Specialised in frontend and backend development for complex scalable web apps. Over the years I've successfully developed custom solutions to solve challenges and engineered designs to meet predetermined functionality goals.</p>
                         </div>
                         <div className="flex items-center gap-8 mt-10">
-                            <Link href={'/contact'}>
+                            <Link target="_blank" rel="noopener noreferrer" href={'/contact'}>
                                 <div className="contact-me-btn rounded-full py-7 px-20">Contact Me</div>
                             </Link>
-                            <Link href={'https://drive.google.com/file/d/1tWhvGxa2-0gXvGwOsv5PVLygto3M2zlm/view?usp=share_link'}>
+                            <Link target="_blank" rel="noopener noreferrer" href={'https://drive.google.com/file/d/1tWhvGxa2-0gXvGwOsv5PVLygto3M2zlm/view?usp=share_link'}>
                                 <div className="browse-cv-btn rounded-full py-7 px-20">Browse CV</div>
                             </Link>
                         </div>
