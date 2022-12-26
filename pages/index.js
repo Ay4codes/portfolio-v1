@@ -5,7 +5,7 @@ import NavBar from '../components/Global-components/Navbar';
 import Homehead from '../components/Home-Components/Homehead';
 import Home2ndSection from '../components/Home-Components/Home-2nd-section';
 import Home3rdSection from '../components/Home-Components/Home-3rd-section';
-
+import Home4thSection from '../components/Home-Components/Home-4th-section';
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
       </div>
       <Home2ndSection />
       <Home3rdSection />
+      <Home4thSection />
     </div>
   )
 }

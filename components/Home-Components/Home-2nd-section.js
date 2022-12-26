@@ -1,7 +1,7 @@
 import SectionTitle from "../Global-components/SectionTitle"
 import Expertise from "../Global-components/Expertise"
 import Link from "next/link"
-import ContactMeBtn from "../Global-components/ContactmeBtn"
+import SectionBtn from "../Global-components/SectionBtn"
 
 
 export default function Home2ndSection() {
@@ -35,7 +35,7 @@ export default function Home2ndSection() {
                         />
                     </div>
                 </div>
-                <ContactMeBtn />
+                <SectionBtn linkTo={'/contact'} title={'Contact me'} />
             </div>
         </div>
     )
