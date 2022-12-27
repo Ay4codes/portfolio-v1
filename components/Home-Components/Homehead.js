@@ -22,12 +22,12 @@ export default function Homehead() {
                         <div className="intro-msg-p">
                             <p>Am a Full Stack Developer based in Lagos, Nigeria. Specialised in frontend and backend development for complex scalable web apps. Over the years I've successfully developed custom solutions to solve challenges and engineered designs to meet predetermined functionality goals.</p>
                         </div>
-                        <div className="flex items-center gap-8 mt-10">
+                        <div className="flex items-center gap-8 mt-7">
                             <Link target="_blank" rel="noopener noreferrer" href={'/contact'}>
-                                <div className="contact-me-btn rounded-full py-7 px-20">Contact Me</div>
+                                <div className="contact-me-btn rounded-full py-5 px-14">Contact Me</div>
                             </Link>
                             <Link target="_blank" rel="noopener noreferrer" href={'https://drive.google.com/file/d/1tWhvGxa2-0gXvGwOsv5PVLygto3M2zlm/view?usp=share_link'}>
-                                <div className="browse-cv-btn rounded-full py-7 px-20">Browse CV</div>
+                                <div className="browse-cv-btn rounded-full py-5 px-14">Browse CV</div>
                             </Link>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ export default function Homehead() {
                 </div>
             </div>
             <div className="home-head-btm-container flex items-center justify-between w-full">
-                <img data-aos="zoom-in-right" className="ml-[-180px] mt-[-40px]" src="/btm-pink.png" alt="btm-pink-icon" />
+                <img className="ml-[-50px] mt-[-10px]" src="/btm-pink.png" alt="btm-pink-icon" />
                 <div className={'typewriter_container flex items-center gap-3'}>
                     <p className="">{"I’m"}</p>
                     <Typewriter
@@ -47,7 +47,7 @@ export default function Homehead() {
                         loop: true,}}
                     />
                 </div>
-                <img data-aos="zoom-in-left" className="mr-[-180px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
+                <img className="mr-[-50px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
             </div>
         </div>
     )

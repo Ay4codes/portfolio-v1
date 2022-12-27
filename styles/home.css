@@ -9,7 +9,7 @@
     max-width: 100%;
 }
 .intro-container {
-    line-height: 4.5rem;
+    line-height: 3rem;
 }
 .intro-container h3 {
     font-size: 35px;
@@ -18,17 +18,16 @@
     color: #263238;
 }
 .intro-container h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
-    color: #263238;:hover
+    color: #263238;
 }
 
 .intro-container p {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     color: #263238;
-    /* font-family: 'Roboto Serif', serif; */
     font-family: 'Montserrat', sans-serif;
 }
 .intro-container p span {
@@ -39,6 +38,14 @@
     border: 3px solid #263238;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: #fff;
+}
+.contact-me-btn:hover {
+    background-color: #fff;
+    color: #263238;
+}
+.browse-cv-btn:hover {
+    background-color: #ff8c92;
     color: #fff;
 }
 .browse-cv-btn {
@@ -62,6 +69,7 @@
     line-height: 1.8rem;
     text-align: justify;
     width: 80%;
+    font-size: 12px;
 }
 .typewriter_container p {
     font-size: clamp(1.5rem, 1.1vw + 1rem, 1.7rem);
@@ -85,7 +93,7 @@
 
 }
 .section-title-wrapper {
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
     color: #263238;
@@ -100,11 +108,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
-    column-gap: 50px;
+    column-gap: 70px;
+    padding-inline: 20px;
 }
 .expertise-wrapper {
     position: relative;
-    width: 330px;
+    max-width: 330px;
     height: 420px;
     margin-inline: auto;
     border-radius: 20px;
@@ -121,7 +130,7 @@
 }
 
 .expertise-wrapper h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
     color: #263238;
@@ -130,7 +139,7 @@
     font-weight: 600;
     color: #263238;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 2rem;
 }
 .contact-me-btn2 a {
@@ -144,7 +153,7 @@
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
 }
 .home-3rd-section-content-wrapper {
     margin-top: 50px;
@@ -158,7 +167,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 150px;
-    height: 700px;
+    /* height: 580px; */
 }
 
 .project-wrapper {
@@ -188,6 +197,7 @@
     font-weight: 800;
     margin-top: -20px;
     width: 130px;
+    font-size: 13px;
 }
 .project-txt-content {
     margin-top: 20px;
@@ -196,13 +206,13 @@
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
     color: #263238;
-    font-size: 22px;
+    font-size: 15px;
 }
 .project-txt-content p {
     font-weight: 600;
     color: #263238;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 2rem;
     margin-top: 15px;
 }
@@ -214,12 +224,13 @@
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
     color: #fff;
+    font-size: 12px;
 }
 .socials-wrapper p {
     font-weight: 600;
     color: #263238;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 .home-4th-section-wrapper {
     background-color: #ff8c92;
@@ -242,7 +253,7 @@
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
     color: #ff8c92;
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 30px;
 }
 .home-4th-section-inner img {
@@ -251,12 +262,12 @@
 }
 .section-title-btn-icon2 {
     background-color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .home-4th-section-inner h2 {
     font-family: 'Bakbak One', cursive;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 35px;
     line-height: 3.5rem;
     color: #fff;
 }
