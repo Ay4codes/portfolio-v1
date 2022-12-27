@@ -6,6 +6,7 @@ import Homehead from '../components/Home-Components/Homehead';
 import Home2ndSection from '../components/Home-Components/Home-2nd-section';
 import Home3rdSection from '../components/Home-Components/Home-3rd-section';
 import Home4thSection from '../components/Home-Components/Home-4th-section';
+import Home5thSection from '../components/Home-Components/Home-5th-section';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Home2ndSection />
       <Home3rdSection />
       <Home4thSection />
+      <Home5thSection />
     </div>
   )
 }
