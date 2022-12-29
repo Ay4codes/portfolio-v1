@@ -24,10 +24,10 @@ export default function Homehead() {
                         </div>
                         <div className="home-head-btm-btns-wrapper">
                             <Link href={'/contact'}>
-                                <div className="contact-me-btn rounded-full py-4 px-11">Contact Me</div>
+                                <div className="contact-me-btn">Contact Me</div>
                             </Link>
                             <Link target="_blank" rel="noopener noreferrer" href={'https://drive.google.com/file/d/1tWhvGxa2-0gXvGwOsv5PVLygto3M2zlm/view?usp=share_link'}>
-                                <div className="browse-cv-btn rounded-full py-4 px-11">Browse CV</div>
+                                <div className="browse-cv-btn">Browse CV</div>
                             </Link>
                         </div>
                     </div>
@@ -36,9 +36,9 @@ export default function Homehead() {
                     <img src="/profile.png" alt="Portfolio Profile"/>
                 </div>
             </div>
-            <div className="home-head-btm-container flex items-center justify-between w-full">
-                <img width={150} className="ml-[-50px] mt-[-10px]" src="/btm-pink.png" alt="btm-pink-icon" />
-                <div className={'typewriter_container flex items-center gap-3'}>
+            <div className="home-head-btm-container">
+                <img width={150} height={120} className="ml-[-50px] mt-[-10px]" src="/btm-pink.png" alt="btm-pink-icon" />
+                <div className={'typewriter_container'}>
                     <p className="">{"I’m"}</p>
                     <Typewriter
                         options={{
@@ -47,7 +47,7 @@ export default function Homehead() {
                         loop: true,}}
                     />
                 </div>
-                <img width={150} className="mr-[-50px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
+                <img width={150} height={120} className="mr-[-50px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
             </div>
         </div>
     )

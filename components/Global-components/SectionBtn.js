@@ -3,8 +3,8 @@ import Link from "next/link"
 
 export default function SectionBtn(props) {
     return (
-        <div className="mt-14 contact-me-btn2 w-full">
-            <Link style={{width: `${props.width}`}} className="flex justify-center" href={`${props.linkTo}`}><button className="">{props.title}</button></Link>
+        <div className="contact-me-btn2">
+            <Link style={{width: `${props.width}`}} href={`${props.linkTo}`}><button className="">{props.title}</button></Link>
         </div>
     )
 }
