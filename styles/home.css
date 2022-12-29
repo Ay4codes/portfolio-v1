@@ -1,6 +1,12 @@
 .home-head-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.home-head-wrapper {
+    padding-top: 50px;
 }
 .home-head-inner-content {
 
@@ -36,12 +42,25 @@
 .intro-container p span {
     color: #263238;
 }
+.home-head-btm-btns-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    gap: 44px;
+}
+.home-head-btm-btns-wrapper a {
+    text-decoration: none;
+}
 .contact-me-btn {
     background-color: #263238;
     border: 3px solid #263238;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: #fff;
+    border-radius: 9999px;
+    padding-block: 16px;
+    padding-inline: 44px;
+    text-decoration: none;
 }
 .contact-me-btn:hover {
     background-color: #fff;
@@ -56,6 +75,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: #263238;
+    border-radius: 9999px;
+    padding-block: 16px;
+    padding-inline: 44px;
+    text-decoration: none;
 }
 
 .contact-me-btn, .browse-cv-btn {
@@ -275,4 +298,10 @@
 }
 .home-5th-section-wrapper {
     margin-bottom: 100px;
+}
+
+@media (max-width: 1020px) {
+    .intro-msg-p {
+        width: none;
+    }
 }

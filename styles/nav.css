@@ -5,7 +5,20 @@
     width: 60px ;
 }
 .nav-innner {
-    /* justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigator-lists-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 128px;
+}
+.navigator-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
 }
 .lets-chat-btn button {
     border: 3px solid #ff8c92;
@@ -13,16 +26,27 @@
     font-family: 'Bakbak One', cursive;
     color: #263238;
     font-size: 12px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding-block: 8px;
+    padding-inline: 20px;
 }
-.navigator-lists li span {
+.navigator-list li span {
     font-family: 'Bakbak One', cursive;
     font-size: 13px;
     transition: all .2s;
     cursor: pointer;
     color: #263238;
 }
+.nav-bar-main {
+    padding-top: 32px;
+    width: 100%;
+}
 
-.navigator-lists li span:hover {
+.navigator-list li span:hover {
     color: #ff8c92;
 }
 

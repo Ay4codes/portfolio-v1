@@ -10,8 +10,8 @@ export default function Homehead() {
         AOS.init();
     }, [])
     return (
-        <div className="home-head-wrapper pt-[50px]">
-            <div className="home-head-inner justify-between items-center mb-8">
+        <div className="home-head-wrapper">
+            <div className="home-head-inner">
                 <div data-aos="fade-right" className="home-head-inner-content">
                     <div>
                         <div className="intro-container">
@@ -22,7 +22,7 @@ export default function Homehead() {
                         <div className="intro-msg-p">
                             <p>Am a Full Stack Developer, Specialised in frontend and backend development for complex scalable web apps. Over the years I've successfully developed custom solutions to solve challenges and engineered designs to meet predetermined functionality goals.</p>
                         </div>
-                        <div className="flex items-center gap-8 mt-7">
+                        <div className="home-head-btm-btns-wrapper">
                             <Link href={'/contact'}>
                                 <div className="contact-me-btn rounded-full py-4 px-11">Contact Me</div>
                             </Link>

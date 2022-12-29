@@ -1,0 +1,17 @@
+.footer-wrapper {
+    line-height: 0.8;
+    background-color: #ff8c92;
+}
+.footer-wrapper p {
+    font-family: 'Bakbak One', cursive;
+    font-weight: 800;
+    color: #263238;
+    font-size: 14px;
+}
+.footer-wrapper span {
+    color: #263238;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 800;
+    text-decoration: underline;
+}
