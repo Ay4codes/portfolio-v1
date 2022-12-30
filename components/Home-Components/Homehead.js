@@ -1,18 +1,13 @@
 import Link from "next/link"
 import Typewriter from 'typewriter-effect';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 
 export default function Homehead() {
-    useEffect(() => {
-        AOS.init();
-    }, [])
     return (
         <div className="home-head-wrapper">
             <div className="home-head-inner">
-                <div data-aos="fade-right" className="home-head-inner-content">
+                <div className="home-head-inner-content">
                     <div>
                         <div className="intro-container">
                             <div className={'new_container'}>

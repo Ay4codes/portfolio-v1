@@ -1,15 +1,10 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { Icon } from '@iconify/react';
 
 
 export default function NavBar() {
-    useEffect(() => {
-        AOS.init();
-    }, [])
     return (
-        <div data-aos="fade-down" className="nav-bar-main" >
+        <div className="nav-bar-main" >
             <div className="nav-innner">
                 <div className="logo-wrapper">
                     <img width={60} height={60} src="/logo.png" alt="Ay4codes Logo" />

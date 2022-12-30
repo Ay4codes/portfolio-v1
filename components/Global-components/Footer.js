@@ -1,18 +1,12 @@
 import { useEffect, useState } from 'react';
 
-export default function Footer() {
-    const [pageVisits, setPageVisits] = useState('')
-
+export default function Footer({pageVisits}) {
     useEffect(() => {
-        fetch('https://api.countapi.xyz/update/ay4codes/ay4codes/?amount=1')
-        .then((res) => res.json())
-        .then((result) => {
-            setPageVisits(result.value)
-        })
-    }, [])
+        console.log(pageVisits);
+    })
     return (
         <div className='footer-wrapper'>
-            <p>© 2022 Ayomide Ishola.</p>
+            <p>© {new Date().getFullYear()} Ayomide Ishola.</p>
             <span>Site stats -- {pageVisits}</span>
         </div>
     )
