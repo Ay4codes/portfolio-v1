@@ -36,7 +36,7 @@ export default function Homehead() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" className="home-head-inner-content">
+                <div className="home-head-inner-content">
                     <img src="/profile.png" alt="Portfolio Profile"/>
                 </div>
             </div>

@@ -30,6 +30,8 @@
     padding: 8px 15px;
     border-radius: 12px;
     display: none;
+    box-shadow: 0 1px 12px 6px rgb(234 76 137 / 9%);
+    cursor: pointer;
 }
 .lets-chat-btn button {
     border: 3px solid #ff8c92;
