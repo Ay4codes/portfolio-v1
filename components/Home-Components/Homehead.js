@@ -17,7 +17,7 @@ export default function Homehead() {
                         <div className="intro-container">
                             <div className={'new_container'}>
                                 <div className={'new_small'}>New</div>
-                                <div className={'new_small_nd'}>Ay4codes {'🌟'}</div>
+                                <div className={'new_small_nd'}>Ay4codes {'🌟🚀'}</div>
                             </div>
                             <h3>Hello! World</h3>
                             <h1>I’m Ayomide Ishola</h1>
