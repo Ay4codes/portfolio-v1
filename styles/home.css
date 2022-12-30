@@ -369,6 +369,7 @@
     padding-inline: 15px;
     padding-block: 10px;
     height: 50px;
+    display: none;
 }
 .new_small {
     background-color: #fff;
@@ -475,5 +476,22 @@
     }
     .home-4th-section-wrapper {
         gap: 50px;
+    }
+    .new_container {
+        display: block;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .home-head-btm-btns-wrapper {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .port-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .home-4th-section-inner2 {
+        display: none;
     }
 }
