@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { Icon } from '@iconify/react';
 
 
 export default function NavBar() {
@@ -22,6 +23,7 @@ export default function NavBar() {
                     </ul>
                     <div className="lets-chat-btn">
                         <button>Let's chat <img width={20} src="/chat.png" /></button>
+                        <div className='hamburger-wrapper'><Icon icon="charm:menu-hamburger" width={20} color="#ff8c92" /></div>
                     </div>
                 </div>
             </div>

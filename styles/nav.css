@@ -20,6 +20,17 @@
     list-style: none;
     gap: 36px;
 }
+.lets-chat-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hamburger-wrapper {
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 12px;
+    display: none;
+}
 .lets-chat-btn button {
     border: 3px solid #ff8c92;
     background-color: #fff;

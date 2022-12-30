@@ -15,6 +15,10 @@ export default function Homehead() {
                 <div data-aos="fade-right" className="home-head-inner-content">
                     <div>
                         <div className="intro-container">
+                            <div className={'new_container'}>
+                                <div className={'new_small'}>New</div>
+                                <div className={'new_small_nd'}>Ay4codes {'🌟'}</div>
+                            </div>
                             <h3>Hello! World</h3>
                             <h1>I’m Ayomide Ishola</h1>
                             <p><span>{'<'}</span>Developer<span>{'>'}</span></p>
@@ -37,7 +41,7 @@ export default function Homehead() {
                 </div>
             </div>
             <div className="home-head-btm-container">
-                <img width={150} height={120} className="ml-[-50px] mt-[-10px]" src="/btm-pink.png" alt="btm-pink-icon" />
+                <img width={150} height={120} src="/btm-pink.png" alt="btm-pink-icon" />
                 <div className={'typewriter_container'}>
                     <p className="">{"I’m"}</p>
                     <Typewriter
@@ -47,7 +51,7 @@ export default function Homehead() {
                         loop: true,}}
                     />
                 </div>
-                <img width={150} height={120} className="mr-[-50px] mt-[-40px]" src="/btm-blue.png" alt="btm-blu-icon" />
+                <img width={150} height={120} src="/btm-blue.png" alt="btm-blu-icon" />
             </div>
         </div>
     )
