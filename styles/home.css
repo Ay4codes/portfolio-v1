@@ -564,3 +564,52 @@
         padding-top: 25px;
     }
 }
+
+@media (min-width: 1300px) {
+    .logo-wrapper img {
+        width: 80px;
+        height: 80px;
+    }
+    .navigator-list li span {
+        font-size: 20px;
+    }
+    .lets-chat-btn button {
+        padding-block: 12px;
+        padding-inline: 30px;
+        font-size: 18px;
+    }
+    .intro-container h3 {
+        font-size: 30px;
+    }
+    .intro-container h1 {
+        font-size: 55px;
+    }
+    .intro-container {
+        line-height: 4.5rem;
+    }
+    .intro-container p {
+        font-size: 60px;
+    }
+    .intro-msg-p {
+        font-size: 17px;
+        line-height: 2.3rem;
+    }
+    .contact-me-btn, .browse-cv-btn {
+        padding: 28px 70px;
+    }
+    .home-head-btm-btns-wrapper {
+        gap: 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .intro-container h3 {
+        font-size: 35px;
+    }
+    .intro-container h1 {
+        font-size: 60px;
+    }
+    .intro-container p {
+        font-size: 70px;
+    }
+}
