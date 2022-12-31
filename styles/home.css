@@ -598,7 +598,63 @@
         padding: 28px 70px;
     }
     .home-head-btm-btns-wrapper {
-        gap: 50px;
+        gap: 70px;
+    }
+    .typewriter_container span, .typewriter_container p {
+        font-size: 25px;
+    }
+    .home-head-btm-container img:first-child {
+        margin-top: -60px;
+        margin-left: -150px;
+        width: 165px;
+        height: 165px;
+    }
+    .home-head-btm-container img:last-child {
+        margin-top: -100px;
+        margin-right: -150px;
+        width: 165px;
+        height: 165px;
+    }
+    .expertise-wrapper {
+        max-width: 320px;
+        min-height: 380px;
+    }
+    .expertise-wrapper img {
+        width: 130px;
+    }
+    .expertise-wrapper h3 {
+        font-size: 20px;
+    }
+    .expertise-wrapper p {
+        font-size: 15px;
+    }
+    .section-title-wrapper {
+        font-size: 30px;
+    }
+    .contact-me-btn2 a button {
+        font-size: 20px;
+    }
+    .project-txt-content h3 {
+        font-size: 25px;
+    }
+    .project-txt-content p {
+        font-size: 15px;
+    }
+    .project-txt-content button {
+        font-size: 17px;
+    }
+    .main-social-wrapper a img {
+        width: 70px;
+        border-radius: 10px;
+    }
+    .main-social-wrapper {
+        gap: 30px;
+    }
+    .home-4th-section-inner h2 {
+        font-size: 45px;
+    }
+    .home-4th-section-inner a button {
+        font-size: 18px;
     }
 }
 
