@@ -656,6 +656,12 @@
     .home-4th-section-inner a button {
         font-size: 18px;
     }
+    .footer-wrapper p {
+        font-size: 17px;
+    }
+    .footer-wrapper span {
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -667,5 +673,17 @@
     }
     .intro-container p {
         font-size: 70px;
+    }
+    .home-head-btm-container img:first-child {
+        margin-top: -0px;
+        margin-left: -100px;
+        width: 125px;
+        height: 125px;
+    }
+    .home-head-btm-container img:last-child {
+        margin-top: -80px;
+        margin-right: -100px;
+        width: 125px;
+        height: 125px;
     }
 }

@@ -17,3 +17,15 @@
     font-weight: 800;
     text-decoration: underline;
 }
+
+@media (min-width: 1300px) {
+    .footer-wrapper p {
+        font-size: 16px;
+    }
+    .footer-wrapper span {
+        font-size: 15px;
+    }
+    .footer-wrapper {
+        line-height: 1.2;
+    }
+}

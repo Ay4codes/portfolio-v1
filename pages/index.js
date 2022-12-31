@@ -9,7 +9,8 @@ import Home4thSection from '../components/Home-Components/Home-4th-section';
 import Home5thSection from '../components/Home-Components/Home-5th-section';
 import Footer from '../components/Global-components/Footer';
 
-export default function Home() {
+export default function Home(props) {
+  const {pageVisits} = props
   return (
     <div className={'app-main-wrapper'}>
       <Head>
@@ -24,7 +25,7 @@ export default function Home() {
       <Home3rdSection />
       <Home4thSection />
       <Home5thSection />
-      <Footer />
+      <Footer pageVisits={pageVisits} />
     </div>
   )
 }
