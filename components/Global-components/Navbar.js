@@ -32,7 +32,7 @@ export default function NavBar() {
             <div className="drop-nav-inner-wrapper">
                 <div style={{transform: isActive  ? 'translateY(0%)' : 'translateY(-130%)'}} className="drop-nav-inner">
                     <button className="drop-cancel-btn">
-                        <Icon onClick={() => {setIsActive(false)}} width={40} height={40} style={{cursor:'pointer'}} color='#ff8c92' icon="material-symbols:cancel" />
+                        <Icon onClick={() => {setIsActive(false)}} width={50} height={50} style={{cursor:'pointer'}} color='#ff8c92' icon="material-symbols:cancel" />
                     </button>
                     <Link href={''}>
                         <button>Home</button>
