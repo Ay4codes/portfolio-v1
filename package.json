@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "npm run prepare && next build"
+    "vercel-build": "npm run dev && next build"
   },
   "engines": {
-    "node": "16.18.1"
+    "node": "16.X"
   },
   "dependencies": {
     "@iconify/react": "^4.0.1",
