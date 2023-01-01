@@ -2,7 +2,6 @@ import Link from "next/link"
 import Typewriter from 'typewriter-effect';
 import { useEffect } from "react";
 
-
 export default function Homehead() {
     return (
         <div className="home-head-wrapper">
@@ -14,7 +13,7 @@ export default function Homehead() {
                                 <div className={'new_small'}>New</div>
                                 <div className={'new_small_nd'}>Ay4codes {'🌟🚀'}</div>
                             </div>
-                            <h3>Hello! World</h3>
+                            <h3 className="animate__swing">Hello! World</h3>
                             <h1>I’m Ayomide Ishola</h1>
                             <p><span>{'<'}</span>Developer<span>{'>'}</span></p>
                         </div>
