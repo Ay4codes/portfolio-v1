@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import '../styles/nav.css'
 import '../styles/home.css'
 import '../styles/footer.css'
+import '../styles/about.css'
+
 
 import { useState, useEffect } from 'react'
 import Head from 'next/head'

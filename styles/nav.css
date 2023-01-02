@@ -1,4 +1,4 @@
-.nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper {
+.nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
     padding-inline: 9%;
 }
 .logo-wrapper img {
@@ -47,12 +47,18 @@
     padding-block: 8px;
     padding-inline: 20px;
 }
+.lets-chat-btn a {
+    text-decoration: none;
+}
 .navigator-list li span {
     font-family: 'Bakbak One', cursive;
     font-size: 13px;
     transition: all .2s;
     cursor: pointer;
     color: #263238;
+}
+.navigator-list li a {
+    text-decoration: none;
 }
 .nav-bar-main {
     padding-top: 32px;
@@ -65,13 +71,13 @@
 
 
 @media (min-width: 1440px) {
-    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper {
+    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
         padding-inline: 8%;
     }
 }
 
 @media (min-width: 1800px) {
-    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper {
+    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
         padding-inline: 13%;
     }
 }

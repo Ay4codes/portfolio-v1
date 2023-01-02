@@ -15,13 +15,13 @@ export default function NavBar() {
                     </div>
                     <div className="navigator-lists-wrapper">
                         <ul className="navigator-list">
-                            <li><span>Home</span></li>
-                            <li><span>About</span></li>
-                            <li><span>Portfolio</span></li>
-                            <li><span>Contact</span></li>
+                            <li><Link href={'/'}><span>Home</span></Link></li>
+                            <li><Link href={'/about'}><span>About</span></Link></li>
+                            <li><Link href={'/portfolio'}><span>Portfolio</span></Link></li>
+                            <li><Link href={'/contact'}><span>Contact</span></Link></li>
                         </ul>
                         <div className="lets-chat-btn">
-                            <button>Let's chat <img width={20} src="/chat.png" /></button>
+                            <Link href={'/contact'}><button>Let's chat <img width={20} src="/chat.png" /></button></Link>
                             <div onClick={() => {setIsActive(true)}} className='hamburger-wrapper'><Icon icon="charm:menu-hamburger" width={20} color="#ff8c92" /></div>
                         </div>
                     </div>
