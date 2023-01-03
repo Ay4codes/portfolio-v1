@@ -25,12 +25,16 @@ function MyApp({ Component, pageProps }) {
         {/* <!-- Primary Meta Tags --> */}
         <meta name="title" content="Ayomide Ishola || @ay4codes" />
 				<meta name="description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
-
+        
         {/* Favicon */}
         <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
 
         {/* <!-- Open Graph / Facebook --> */}
 				<meta property="og:type" content="website" />
+        <meta property="og:image:type" content="image/png" />
 				<meta property="og:url" content="https://ay4codes.netlify.app/" />
 				<meta property="og:title" content="Ayomide Ishola || @ay4codes" />
 				<meta property="og:description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
