@@ -22,7 +22,27 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
+        {/* <!-- Primary Meta Tags --> */}
+        <meta name="title" content="Ayomide Ishola || @ay4codes" />
+				<meta name="description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
+
+        {/* Favicon */}
         <link rel="icon" href="/favicon.png" />
+
+        {/* <!-- Open Graph / Facebook --> */}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://ay4codes.netlify.app/" />
+				<meta property="og:title" content="Ayomide Ishola || @ay4codes" />
+				<meta property="og:description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
+        <meta property="og:image" content="https://ay4codes.netlify.app/preview.png" />
+
+        {/* <!-- Twitter --> */}
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content="https://ay4codes.netlify.app/" />
+				<meta property="twitter:title" content="Ayomide Ishola || @ay4codes" />
+				<meta property="twitter:description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
+				<meta property="twitter:image" content="https://ay4codes.netlify.app/preview.png" />
+
       </Head>
       <Component {...pageProps} pageVisits={pageVisits} />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
