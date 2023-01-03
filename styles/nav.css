@@ -1,4 +1,4 @@
-.nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
+.nav-bar-main, .about-2nd-section-wrapper, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
     padding-inline: 9%;
 }
 .logo-wrapper img {
@@ -71,13 +71,13 @@
 
 
 @media (min-width: 1440px) {
-    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
+    .nav-bar-main, .about-2nd-section-wrapper, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
         padding-inline: 8%;
     }
 }
 
 @media (min-width: 1800px) {
-    .nav-bar-main, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
+    .nav-bar-main, .about-2nd-section-wrapper, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
         padding-inline: 13%;
     }
 }

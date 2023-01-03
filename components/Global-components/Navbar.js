@@ -34,10 +34,10 @@ export default function NavBar() {
                     <button className="drop-cancel-btn">
                         <Icon onClick={() => {setIsActive(false)}} width={50} height={50} style={{cursor:'pointer'}} color='#ff8c92' icon="material-symbols:cancel" />
                     </button>
-                    <Link href={''}>
+                    <Link href={'/'}>
                         <button>Home</button>
                     </Link> <br />
-                    <Link href={''}>
+                    <Link href={'/about'}>
                         <button>About</button>
                     </Link> <br />
                     <Link href={''}>

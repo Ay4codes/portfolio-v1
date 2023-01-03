@@ -410,6 +410,7 @@ html {
     height: 100vh;
     background-color: #00000052;
     padding: 20px;
+    z-index: 100000;
 }
 .drop-nav-inner {
     position: absolute;
@@ -423,6 +424,7 @@ html {
     line-height: 3.5rem;
     transition: all .4s;
     margin-inline: auto;
+    z-index: 100000;
 }
 .drop-nav-inner a {
     text-decoration: none;
