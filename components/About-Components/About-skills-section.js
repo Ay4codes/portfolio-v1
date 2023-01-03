@@ -10,7 +10,7 @@ export default function AboutSkillsSection() {
         {title: 'NextJs', percent: '90'},
         {title: 'NodeJs', percent: '92'},
         {title: 'MongoDB', percent: '90'},
-        {title: 'Linux', percent: '92'},
+        {title: 'Linux/MacOS', percent: '92'},
         {title: 'Documentation', percent: '87'},
         {title: 'Git/Github', percent: '96'}
     ]

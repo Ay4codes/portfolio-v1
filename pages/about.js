@@ -8,11 +8,11 @@ import AboutSkillsSection from '../components/About-Components/About-skills-sect
 
 export default function About(props) {
   const {pageVisits} = props
+  
   return (
     <div className={'app-main-wrapper'}>
       <Head>
         <title>About - Ayomide Ishola || @ay4codes</title>
-        <meta name="description" content="" />
       </Head>
       <NavBar />
       <About1stSection />
