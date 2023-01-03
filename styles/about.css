@@ -183,7 +183,29 @@
 }
 
 
-@media (min-width: 1300px) {}
+@media (min-width: 1350px) {
+    .main-about-head-inner-content p {
+        font-size: 17px;
+    }
+    .about-head-inner-content1 {
+        width: 40%;
+    }
+    .main-about-head-inner-content {
+        height: auto;
+    }
+    .main-about-head-inner-content a button {
+        font-size: 18px;
+    }
+    .skills-wrapper p {
+        font-size: 18px;
+    }
+    .skills-content {
+        font-size: 20px;
+    }
+    .skills-innner {
+        padding: 6px;
+    }
+}
 
 
 @media (min-width: 1400px) {}
