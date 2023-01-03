@@ -173,6 +173,9 @@
     .skills-innner {
         padding: 6px;
     }
+    .about-head-wrapper {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -190,8 +193,8 @@
     .about-head-inner-content1 {
         width: 40%;
     }
-    .main-about-head-inner-content {
-        height: auto;
+    .main-about-head-inner-content, .about-head-inner-content1 {
+        height: 370px;
     }
     .main-about-head-inner-content a button {
         font-size: 18px;
