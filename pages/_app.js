@@ -34,11 +34,18 @@ function MyApp({ Component, pageProps }) {
 
         {/* <!-- Open Graph / Facebook --> */}
 				<meta property="og:type" content="website" />
-        <meta property="og:image:type" content="image/png" />
 				<meta property="og:url" content="https://ay4codes.netlify.app/" />
 				<meta property="og:title" content="Ayomide Ishola || @ay4codes" />
 				<meta property="og:description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
         <meta property="og:image" content="https://ay4codes.netlify.app/preview.png" />
+
+        {/* WhatsApp */}
+        <meta property="og:type" content="website" />
+        <meta property="og:image:type" content="image/png" />
+				<meta property="og:url" content="https://ay4codes.netlify.app/" />
+				<meta property="og:title" content="Ayomide Ishola || @ay4codes" />
+				<meta property="og:description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
+        <meta property="og:image" itemprop="image" content="https://ay4codes.netlify.app/preview.png" />
 
         {/* <!-- Twitter --> */}
 				<meta property="twitter:card" content="summary_large_image" />
