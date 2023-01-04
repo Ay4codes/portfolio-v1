@@ -243,6 +243,37 @@
     .form-social-inner-wrapper {
         justify-content: left;
     }
+    .input-wrapper input, .input-wrapper textarea {
+        font-size: 14px;
+    }
+    .input-wrapper p {
+        font-size: 12px;
+        transform: translateY(40px);
+    }
+    .input-wrapper span {
+        font-size: 12px;
+    }
+    .input-wrapper input {
+        padding: 12px 35px 12px 12px;
+    }
+    .form-social-inner-wrapper img {
+        width: 45px;
+    }
+    .contact-info-wrapper h4 {
+        font-size: 16px;
+    }
+    .contact-details-container p {
+        font-size: 15px;
+    }
+    .contact-details-container span {
+        font-size: 12px;
+    }
+    .contact-details-container {
+        line-height: 0.9rem;
+    }
+    .contact-details-container form button {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 1300px) {}
