@@ -1,12 +1,6 @@
 import nodemailer from 'nodemailer'
+import { formatCompany } from '../../utils/validator.utils';
 
-function formatCompany(value) {
-    if (value === null || value.length === 0 || value === '') {
-        return 'By an Individual'
-    } else {
-        return value
-    }
-}
 
 export default async function contact(res,res) {
     const {name, email, company, subject, message} = req.body

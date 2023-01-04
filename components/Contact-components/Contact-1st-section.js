@@ -2,12 +2,12 @@ import { useState } from "react"
 import SectionTitle from "../Global-components/SectionTitle"
 import Link from "next/link"
 import { Icon } from '@iconify/react';
-import { Emailvalidator, isEmpt } from "../../utils/validator.utils";
+import {NameValidator, Emailvalidator, isEmpty } from "../../utils/validator.utils";
 
 
 export default function Contact1stSection() {
     const [inputsFocus, setInputFocus] = useState({nameInput: false, emailInput: false, companyInput: false, subjectInput: false, messageInput: false})
-    const [inputsValue, setInputValue] = useState({name: '', email: '', company: '', subject: '', message: ''})
+    const [inputsValue, setInputValue] = useState({name: null, email: null, company: null, subject: null, message: null})
     const [inputError, setInputError] = useState({nameErr: "", emailErr: "", subjectErr: "", messageErr: ""})
 
     function checkInput(value, input) {
@@ -48,9 +48,39 @@ export default function Contact1stSection() {
         }
     }
 
-    async function sendMessage() {
+    async function sendMessage(e) {
+        e.preventDefault()
+
+        if (inputsValue.name === null && inputsValue.email === null && inputsValue.subject === null && inputsValue.message === null) {
+            setInputError({...inputError, nameErr: 'Name required', emailErr: 'Email required', subjectErr: 'Subject required', messageErr: 'Message required'})
+            return
+        }
+
+        if (NameValidator(inputsValue.name)) {
+            setInputError({...inputError, nameErr: 'Name should be 3+ character long'})
+            return
+        } else if (NameValidator(inputsValue.name) === null) {
+            setInputError({...inputError, nameErr: 'Name required'})
+            return
+        }
+
+        if (Emailvalidator(inputsValue.email)) {
+            setInputError({...inputError, emailErr: 'Email is invalid'})
+            return
+        } else if (Emailvalidator(inputsValue.email) === null) {
+            setInputError({...inputError, emailErr: 'Email is required'})
+            return
+        }
+
+        if (isEmpty(inputsValue.subject) === null) {
+            setInputError({...inputError, subjectErr: 'Subject required'})
+            return
+        }
+
         
     }
+
+
     return (
         <div className={'app-main-wrapper'}>
             <div className="contact-1st-section-wrapper">
@@ -85,7 +115,7 @@ export default function Contact1stSection() {
                 </div>
                 <div className="contact-flex-content-wrapper contact-flex-content-wrapper2">
                     <div className="contact-flex-content-inner">
-                        <form onSubmit={(e) => e.preventDefault()}>
+                        <form onSubmit={(e) => {e.preventDefault(); sendMessage(e)}}>
                             <div className="input-block-wrapper">
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.nameInput && 'translateY(8px)'}}>Fullname</p>
@@ -118,7 +148,7 @@ export default function Contact1stSection() {
                                 </div>
                             </div>
                             <div className="send-btn-wrapper">
-                                <button>Send Message</button>
+                                <button type="submit">Send Message</button>
                             </div>
                             <div className="form-btm-content-wrapper">
                                 <div className="divider"></div>

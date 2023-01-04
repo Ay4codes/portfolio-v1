@@ -23,4 +23,12 @@ function isEmpty(string) {
     }
 }
 
-export {Emailvalidator, NameValidator, isEmpty}
+function formatCompany(value) {
+    if (value === null || value.length === 0 || value === '') {
+        return 'By an Individual'
+    } else {
+        return value
+    }
+}
+
+export {Emailvalidator, NameValidator, isEmpty, formatCompany}
