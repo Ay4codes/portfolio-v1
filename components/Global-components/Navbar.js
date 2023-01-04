@@ -43,7 +43,7 @@ export default function NavBar() {
                     <Link href={''}>
                         <button>Portfolio</button>
                     </Link> <br />
-                    <Link href={''}>
+                    <Link href={'/contact'}>
                         <button>Contact</button>
                     </Link>
                 </div>

@@ -13,12 +13,17 @@ function MyApp({ Component, pageProps }) {
   const [pageVisits, setPageVisits] = useState(0)
 
     useEffect(() => {
+      try {
         fetch('https://api.countapi.xyz/update/ay4codes/ay4codes/?amount=1')
         .then((res) => res.json())
         .then((result) => {
             setPageVisits(result.value)
         })
+      } catch (error) {
+        console.log(error);
+      }
   }, [])
+
   return (
     <div>
       <Head>
