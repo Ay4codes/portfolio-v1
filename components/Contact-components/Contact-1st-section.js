@@ -1,10 +1,13 @@
 import { useState } from "react"
 import SectionTitle from "../Global-components/SectionTitle"
+import Link from "next/link"
+import { Icon } from '@iconify/react';
 
 export default function Contact1stSection() {
-    const [inputsFocus, setInputFocus] = useState({nameInput: false, emailInput: false, companyInput: false, subjectInput: false})
+    const [inputsFocus, setInputFocus] = useState({nameInput: false, emailInput: false, companyInput: false, subjectInput: false, messageInput: false})
     const [inputsValue, setInputValue] = useState({name: '', email: '', company: '', subject: '', message: ''})
-
+    const [inputError, setInputError] = useState({nameErr: "", emailErr: "", subjectErr: "", messageErr: ""})
+    
     function checkInput(value, input) {
         if (input === 'nameInput') {
             if (value === null || value.length === 0) {
@@ -34,13 +37,45 @@ export default function Contact1stSection() {
                 setInputFocus({...inputsFocus, subjectInput: true})
             }
         }
-        
+        if (input === 'messageInput') {
+            if (value === null || value.length === 0) {
+                setInputFocus({...inputsFocus, messageInput: false})
+            } else {
+                setInputFocus({...inputsFocus, messageInput: true})
+            }
+        }
     }
     return (
         <div className={'app-main-wrapper'}>
             <div className="contact-1st-section-wrapper">
                 <div className="contact-flex-content-wrapper contact-flex-content-wrapper1">
                     <SectionTitle title={'Lets Work Together'} />
+                    <div className="contact-info-wrapper">
+                        <h4>Contact Info</h4>
+                        <div className="contact-info-inner-wrapper">
+                            <Icon icon="gg:profile" color="#ff8c92" style={{borderRadius: '5px'}} width="33" />
+                            <div className="contact-details-container">
+                                <p>Name</p>
+                                <span>Ayomide Ishola</span>
+                            </div>
+                        </div>
+                        <div className="contact-info-inner-wrapper">
+                            <Icon icon="material-symbols:share-location" color="#ff8c92" style={{borderRadius: '5px'}} width="33" />
+                            <div className="contact-details-container">
+                                <p>Location</p>
+                                <span>Lagos State, Nigeria</span>
+                            </div>
+                        </div>
+                        <div className="contact-info-inner-wrapper">
+                            <Icon icon="material-symbols:mark-email-unread-rounded" color="#ff8c92" style={{borderRadius: '5px'}} width="33" />
+                            <div className="contact-details-container">
+                                <p>Email</p>
+                                <form action="mailto:ay4codes@gmail.com" method="post">
+                                    <button type="submit">ay4codes@gmail.com</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="contact-flex-content-wrapper contact-flex-content-wrapper2">
                     <div className="contact-flex-content-inner">
@@ -48,27 +83,32 @@ export default function Contact1stSection() {
                             <div className="input-block-wrapper">
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.nameInput && 'translateY(8px)'}}>Fullname</p>
-                                    <input onChange={(e) => setInputValue({...inputsValue, name: e.target.value})} onBlur={() => {checkInput(inputsValue.name, 'nameInput')}} onFocus={() => {setInputFocus({...inputsFocus, nameInput: true})}} type="text" className="nameInput" />
+                                    <input required={true} onChange={(e) => setInputValue({...inputsValue, name: e.target.value})} onBlur={() => {checkInput(inputsValue.name, 'nameInput')}} onFocus={() => {setInputFocus({...inputsFocus, nameInput: true})}} type="text" className="nameInput" />
+                                    <span>{inputError.nameErr || inputError.emailErr || inputError.subjectErr || inputError.messageErr}</span>
                                 </div>
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.emailInput && 'translateY(8px)'}}>Email</p>
                                     <input onChange={(e) => setInputValue({...inputsValue, email: e.target.value})} onBlur={() => {checkInput(inputsValue.email, 'emailInput')}} onFocus={() => {setInputFocus({...inputsFocus, emailInput: true})}} className="emailInput" type="text" />
+                                    <span>{inputError.nameErr || inputError.emailErr || inputError.subjectErr || inputError.messageErr}</span>
                                 </div>
                             </div>
                             <div className="input-block-wrapper">
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.companyInput && 'translateY(8px)'}}>Company</p>
                                     <input onChange={(e) => setInputValue({...inputsValue, company: e.target.value})} onBlur={() => {checkInput(inputsValue.company, 'companyInput')}} onFocus={() => {setInputFocus({...inputsFocus, companyInput: true})}} type="text" className="companyInput" />
+                                    <span>{inputError.nameErr || inputError.emailErr || inputError.subjectErr || inputError.messageErr}</span>
                                 </div>
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.subjectInput && 'translateY(8px)'}}>Subject</p>
                                     <input onChange={(e) => setInputValue({...inputsValue, subject: e.target.value})} onBlur={() => {checkInput(inputsValue.subject, 'subjectInput')}} onFocus={() => {setInputFocus({...inputsFocus, subjectInput: true})}} type="text" className="subjectInput"/>
+                                    <span>{inputError.nameErr || inputError.emailErr || inputError.subjectErr || inputError.messageErr}</span>
                                 </div>
                             </div>
                             <div className="input-block-wrapper">
                                 <div className="input-wrapper">
-                                    <p style={{transform: inputsFocus.companyInput && 'translateY(8px)'}}>Company</p>
-                                    <textarea rows="7" onChange={(e) => setInputValue({...inputsValue, company: e.target.value})} onBlur={() => {checkInput(inputsValue.company, 'companyInput')}} onFocus={() => {setInputFocus({...inputsFocus, companyInput: true})}} type="text" className="messageInput" />
+                                    <p style={{transform: inputsFocus.messageInput && 'translateY(8px)'}}>Message</p>
+                                    <textarea rows="7" onChange={(e) => setInputValue({...inputsValue, message: e.target.value})} onBlur={() => {checkInput(inputsValue.message, 'messageInput')}} onFocus={() => {setInputFocus({...inputsFocus, messageInput: true})}} type="text" className="messageInput" />
+                                    <span>{inputError.nameErr || inputError.emailErr || inputError.subjectErr || inputError.messageErr}</span>
                                 </div>
                             </div>
                             <div className="send-btn-wrapper">
@@ -77,8 +117,13 @@ export default function Contact1stSection() {
                             <div className="form-btm-content-wrapper">
                                 <div className="divider"></div>
                                 <div className="form-socials-wrapper">
-                                    <p>Follow me my journey</p>
-                                    
+                                    <div>Follow me my journey</div>
+                                    <div className="form-social-inner-wrapper">
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.linkedin.com/in/ayomide-ishola-b1240124a'}><img src="/linkedin.png" /></Link>
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.github.com/ay4codes'}><img src="/github.png" /></Link>
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.twitter.com/ay4codes'}><img src="/twitter.png" /></Link>
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.instagram.com/haryormeed_256/'}><img src="/instagram.svg" /></Link>
+                                    </div>
                                 </div>
                             </div>
                         </form>

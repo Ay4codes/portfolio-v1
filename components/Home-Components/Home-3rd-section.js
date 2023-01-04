@@ -19,6 +19,7 @@ export default function Home3rdSection() {
             <div className="socials-wrapper">
                 <p>Follow me and check my portfolio to discover more great works.</p>
                 <div className="main-social-wrapper gap-5 mt-5">
+                    <Link target="_blank" rel="noopener noreferrer" href={'https://www.linkedin.com/in/ayomide-ishola-b1240124a'}><img width={40} src="/linkedin.png" /></Link>
                     <Link target="_blank" rel="noopener noreferrer" href={'https://www.instagram.com/haryormeed_256/'}><img width={40} className={'rounded-xl'} src="/instagram.svg" /></Link>
                     <Link target="_blank" rel="noopener noreferrer" href={'https://www.twitter.com/ay4codes'}><img width={40} className={'rounded-xl'} src="/twitter.png" /></Link>
                     <Link target="_blank" rel="noopener noreferrer" href={'https://www.github.com/ay4codes'}><img width={40} className={'rounded-xl'} src="/github.png" /></Link>
