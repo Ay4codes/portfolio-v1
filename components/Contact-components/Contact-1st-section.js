@@ -2,13 +2,14 @@ import { useState } from "react"
 import SectionTitle from "../Global-components/SectionTitle"
 import Link from "next/link"
 import { Icon } from '@iconify/react';
-import {NameValidator, Emailvalidator, isEmpty } from "../../utils/validator.utils";
+import {NameValidator, formatCompany, Emailvalidator, isEmpty } from "../../utils/validator.utils";
 
 
 export default function Contact1stSection() {
     const [inputsFocus, setInputFocus] = useState({nameInput: false, emailInput: false, companyInput: false, subjectInput: false, messageInput: false})
     const [inputsValue, setInputValue] = useState({name: null, email: null, company: null, subject: null, message: null})
     const [inputError, setInputError] = useState({nameErr: "", emailErr: "", subjectErr: "", messageErr: ""})
+    const [formState, setFormState] = useState({submitted: false, sending: false, success: false})
 
     function checkInput(value, input) {
         if (input === 'nameInput') {
@@ -77,7 +78,27 @@ export default function Contact1stSection() {
             return
         }
 
-        
+        if (isEmpty(inputsValue.message) === null) {
+            setInputError({...inputError, messageErr: 'Message required'})
+            return
+        }
+
+        // If Validation Successfull
+        setFormState({...formState, sending: true})
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            body: JSON.stringify(inputsValue),
+            headers: {
+                Accept: 'application.json',
+                'Content-Type': 'application/json'
+            }
+        })
+
+        if (response.status === 200) {
+            window.alert('Message sent successfully ✅✅✅')
+        } else {
+            window.alert('Error sending message 📛📛📛')
+        }
     }
 
 
@@ -119,12 +140,12 @@ export default function Contact1stSection() {
                             <div className="input-block-wrapper">
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.nameInput && 'translateY(8px)'}}>Fullname</p>
-                                    <input onChange={(e) => setInputValue({...inputsValue, name: e.target.value})} onBlur={() => {checkInput(inputsValue.name, 'nameInput')}} onFocus={() => {setInputFocus({...inputsFocus, nameInput: true})}} type="text" className="nameInput" />
+                                    <input onKeyDown={() => {setInputError({...inputError, nameErr: null})}} onChange={(e) => setInputValue({...inputsValue, name: e.target.value})} onBlur={() => {checkInput(inputsValue.name, 'nameInput')}} onFocus={() => {setInputFocus({...inputsFocus, nameInput: true})}} type="text" className="nameInput" />
                                     <span>{inputError.nameErr}</span>
                                 </div>
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.emailInput && 'translateY(8px)'}}>Email</p>
-                                    <input onChange={(e) => setInputValue({...inputsValue, email: e.target.value})} onBlur={() => {checkInput(inputsValue.email, 'emailInput')}} onFocus={() => {setInputFocus({...inputsFocus, emailInput: true})}} className="emailInput" type="text" />
+                                    <input onKeyDown={() => {setInputError({...inputError, emailErr: null})}} onChange={(e) => setInputValue({...inputsValue, email: e.target.value})} onBlur={() => {checkInput(inputsValue.email, 'emailInput')}} onFocus={() => {setInputFocus({...inputsFocus, emailInput: true})}} className="emailInput" type="text" />
                                     <span>{inputError.emailErr}</span>
                                 </div>
                             </div>
@@ -136,19 +157,19 @@ export default function Contact1stSection() {
                                 </div>
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.subjectInput && 'translateY(8px)'}}>Subject</p>
-                                    <input onChange={(e) => setInputValue({...inputsValue, subject: e.target.value})} onBlur={() => {checkInput(inputsValue.subject, 'subjectInput')}} onFocus={() => {setInputFocus({...inputsFocus, subjectInput: true})}} type="text" className="subjectInput"/>
+                                    <input onKeyDown={() => {setInputError({...inputError, subjectErr: null})}} onChange={(e) => setInputValue({...inputsValue, subject: e.target.value})} onBlur={() => {checkInput(inputsValue.subject, 'subjectInput')}} onFocus={() => {setInputFocus({...inputsFocus, subjectInput: true})}} type="text" className="subjectInput"/>
                                     <span>{inputError.subjectErr}</span>
                                 </div>
                             </div>
                             <div className="input-block-wrapper">
                                 <div className="input-wrapper">
                                     <p style={{transform: inputsFocus.messageInput && 'translateY(8px)'}}>Message</p>
-                                    <textarea rows="7" onChange={(e) => setInputValue({...inputsValue, message: e.target.value})} onBlur={() => {checkInput(inputsValue.message, 'messageInput')}} onFocus={() => {setInputFocus({...inputsFocus, messageInput: true})}} type="text" className="messageInput" />
+                                    <textarea onKeyDown={() => {setInputError({...inputError, messageErr: null})}} rows="7" onChange={(e) => setInputValue({...inputsValue, message: e.target.value})} onBlur={() => {checkInput(inputsValue.message, 'messageInput')}} onFocus={() => {setInputFocus({...inputsFocus, messageInput: true})}} type="text" className="messageInput" />
                                     <span>{inputError.messageErr}</span>
                                 </div>
                             </div>
                             <div className="send-btn-wrapper">
-                                <button type="submit">Send Message</button>
+                                <button onMouseDown={() => setInputValue({...inputsValue, company: formatCompany(inputsValue.company)})} type="submit">Send Message</button>
                             </div>
                             <div className="form-btm-content-wrapper">
                                 <div className="divider"></div>

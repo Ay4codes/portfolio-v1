@@ -1,8 +1,6 @@
 import nodemailer from 'nodemailer'
-import { formatCompany } from '../../utils/validator.utils';
 
-
-export default async function contact(res,res) {
+export default async function contact(req,res) {
     const {name, email, company, subject, message} = req.body
 
     const transporter = nodemailer.createTransport({
@@ -28,14 +26,14 @@ export default async function contact(res,res) {
         const mailOptions = {
             from: process.env.EMAIL,
             to: process.env.EMAIL,
-            subject: subject,
+            subject: 'Message From My Portfolio',
             html: `
                     <h3>Message From My Portfolio</h3>
                     <br />
                     <p>Name: <b>${name}</b></p>
                     <p>Email: <b>${email}</b></p>
                     <p>Subject: <b>${subject}</b></p>
-                    <p>Company: <b>${formatCompany(company)}</b></p>
+                    <p>Company: <b>${company}</b></p>
                     <br />
                     <br />
                     <p>Message: <b>${message}</b></p>
