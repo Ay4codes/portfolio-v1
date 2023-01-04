@@ -95,6 +95,8 @@ export default function Contact1stSection() {
         })
 
         if (response.status === 200) {
+            setInputValue({...inputsValue, name: null, email: null, company: null, subject: null, message: null})
+            setInputError({...inputError, nameErr: "", emailErr: "", subjectErr: "", messageErr: ""})
             window.alert('Message sent successfully ✅✅✅')
         } else {
             window.alert('Error sending message 📛📛📛')

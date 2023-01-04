@@ -24,7 +24,7 @@ export default async function contact(req,res) {
                     <p>Subject: <b>${subject}</b></p>
                     <p>Company: <b>${company}</b></p>
                     <br />
-                    <p>Message: <b>${message}</b></p>
+                    <p>Message: <br /> ${message}</p>
                 `
         };
     
