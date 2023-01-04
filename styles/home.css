@@ -304,7 +304,7 @@ html {
     gap: 20px;
 }
 .main-social-wrapper a img {
-    border-radius: 8px;
+    border-radius: 10px;
 }
 .socials-wrapper p {
     font-weight: 600;

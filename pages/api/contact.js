@@ -12,16 +12,7 @@ export default async function contact(req,res) {
               pass: process.env.APP_PASSWORD
             }
         });
-
-        function verifyConnection() {
-            transporter.verify(function(err) {
-                if (err) {
-                    return false
-                } else {
-                    return true
-                }
-            })
-        }
+        
         const mailOptions = {
             from: process.env.EMAIL,
             to: process.env.EMAIL,
