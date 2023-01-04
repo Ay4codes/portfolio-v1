@@ -1,0 +1,121 @@
+.contact-1st-section-wrapper {
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.contact-flex-content-wrapper {
+    
+}
+.contact-flex-content-wrapper1 {
+    width: 40%;
+}
+.contact-flex-content-wrapper2 {
+    width: 50%;
+    margin-inline: auto;
+}
+.contact-flex-content-inner {
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 rgb(39 25 77 / 2%), 0 3px 20px 0 rgb(112 81 239 / 4%), 0 10px 28px 0 rgb(39 25 77 / 3%);
+}
+.input-block-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.input-wrapper {
+    width: 100%;
+}
+.input-wrapper input {
+    background-color: #f7f7fa;
+    border: 1.5px solid #f7f7fa;
+    padding: 10px 35px 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #263238;
+    transition: all .3s;
+}
+.input-wrapper textarea {
+    background-color: #f7f7fa;
+    border: 1.5px solid #f7f7fa;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #263238;
+    transition: all .3s;
+    resize: none;
+}
+.input-wrapper p {
+    padding: 10px 35px 10px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #263238;
+    transform: translateY(34px);
+    width: 0;
+    transition: all .3s;
+    user-select: none;
+    cursor: text;
+}
+.input-wrapper input:focus, .input-wrapper textarea:focus {
+    outline: none;
+    border: 1.5px solid #ff8c92;
+}
+.input-wrapper input:hover, .input-wrapper textarea:hover {
+    border: 1.5px solid #ff8c92;
+}
+.nameInput {
+    background-image: url('/name-input.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+    background-size: auto;
+}
+.emailInput {
+    background-image: url('/email-Input.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+    background-size: auto;
+}
+.companyInput {
+    background-image: url('/company.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+    background-size: auto;
+}
+.subjectInput {
+    background-image: url('/subject.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+    background-size: auto;
+}
+.send-btn-wrapper {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.send-btn-wrapper button {
+    background-color: #ff8c92;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-family: 'Bakbak One', cursive;
+    font-weight: 400;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    margin-inline: auto;
+}

@@ -3,6 +3,7 @@ import '../styles/nav.css'
 import '../styles/home.css'
 import '../styles/footer.css'
 import '../styles/about.css'
+import '../styles/contact.css'
 
 
 import { useState, useEffect } from 'react'
