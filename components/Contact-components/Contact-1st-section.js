@@ -2,7 +2,7 @@ import { useState } from "react"
 import SectionTitle from "../Global-components/SectionTitle"
 import Link from "next/link"
 import { Icon } from '@iconify/react';
-import { EmailValidator, isEmpt } from "../../utils/validator.utils";
+import { Emailvalidator, isEmpt } from "../../utils/validator.utils";
 
 
 export default function Contact1stSection() {

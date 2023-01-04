@@ -23,4 +23,4 @@ function isEmpty(string) {
     }
 }
 
-export {EmailValidator, NameValidator, isEmpty}
+export {Emailvalidator, NameValidator, isEmpty}
