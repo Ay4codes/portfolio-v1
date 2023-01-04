@@ -200,3 +200,50 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media (max-width: 1020px) {
+    .contact-flex-content-wrapper2 {
+        width: 60%;
+    }
+}
+@media (max-width: 800px) {
+    .contact-info-inner-wrapper {
+        margin-top: 20px;
+    }
+    .form-socials-wrapper div {
+        height: auto;
+    }
+    .contact-1st-section-wrapper {
+        padding-inline: 5%;
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+    .contact-flex-content-wrapper2 {
+        width: 100%;
+    }
+    .contact-flex-content-wrapper1 {
+        width: 100%;
+        
+    }
+    .contact-info-wrapper h4 {
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .input-block-wrapper {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .form-socials-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-social-inner-wrapper {
+        justify-content: left;
+    }
+}
+
+@media (min-width: 1300px) {}
+@media (min-width: 1400px) {}
