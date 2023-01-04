@@ -104,8 +104,8 @@
 .send-btn-wrapper {
     margin-top: 15px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 .send-btn-wrapper button {
     background-color: #ff8c92;
@@ -118,4 +118,17 @@
     font-size: 12px;
     cursor: pointer;
     margin-inline: auto;
+}
+.form-btm-content-wrapper {
+    margin-top: 30px;
+}
+.divider {
+    background-color: #e5e5ea;
+    height: 0.9px;
+}
+.form-socials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
 }

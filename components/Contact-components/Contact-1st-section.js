@@ -74,6 +74,13 @@ export default function Contact1stSection() {
                             <div className="send-btn-wrapper">
                                 <button>Send Message</button>
                             </div>
+                            <div className="form-btm-content-wrapper">
+                                <div className="divider"></div>
+                                <div className="form-socials-wrapper">
+                                    <p>Follow me my journey</p>
+                                    
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
