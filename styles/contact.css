@@ -114,8 +114,6 @@
 .send-btn-wrapper {
     margin-top: 15px;
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 .send-btn-wrapper button {
     background-color: #ff8c92;
@@ -128,6 +126,7 @@
     font-size: 12px;
     cursor: pointer;
     margin-inline: auto;
+    width: 130px;
 }
 .form-btm-content-wrapper {
     margin-top: 30px;
