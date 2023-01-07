@@ -68,7 +68,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
     margin-top: 15px;
-    row-gap: 40px;
+    row-gap: 50px;
 }
 .skills-wrapper {
     width: 100%;
@@ -207,6 +207,9 @@
     }
     .skills-innner {
         padding: 6px;
+    }
+    .about-2nd-section-content-wrapper {
+        row-gap: 70px;
     }
 }
 
