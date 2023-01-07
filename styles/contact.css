@@ -301,7 +301,7 @@
     }
     .input-wrapper p {
         font-size: 12px;
-        transform: translateY(39px);
+        transform: translateY(40px);
     }
     .send-btn-wrapper button {
         font-size: 18px;
@@ -325,6 +325,9 @@
     }
     .contact-info-wrapper {
         margin-top: 30px;
+    }
+    .input-wrapper span {
+        font-size: 11.5px;
     }
 }
 
