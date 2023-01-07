@@ -275,5 +275,58 @@
     }
 }
 
-@media (min-width: 1300px) {}
+@media (min-width: 1300px) {
+    .contact-info-wrapper h4 {
+        font-size: 20px;
+    }
+    .contact-details-container p {
+        font-size: 15px;
+    }
+    .contact-details-container span {
+        font-size: 13px;
+    }
+    .contact-info-inner-wrapper {
+        margin-top: 40px;
+    }
+    .input-block-wrapper {
+        margin-top: 15px;
+    }
+    .input-wrapper input {
+        padding: 13px 35px 13px 13px;
+        font-size: 15px;
+    }
+    .input-wrapper textarea {
+        padding: 13px 13px 13px 13px;
+        font-size: 15px;
+    }
+    .input-wrapper p {
+        font-size: 12px;
+        transform: translateY(39px);
+    }
+    .send-btn-wrapper button {
+        font-size: 18px;
+        width: 180px;
+        padding: 10px 20px;
+    }
+    .form-socials-wrapper div {
+        font-size: 18px;
+    }
+    .form-social-inner-wrapper img {
+        width: 50px;
+    }
+    .form-socials-wrapper {
+        margin-block: 60px;
+    }
+    .send-btn-wrapper {
+        margin-top: 25px;
+    }
+    .contact-1st-section-wrapper {
+        padding-top: 70px;
+    }
+    .contact-info-wrapper {
+        margin-top: 30px;
+    }
+}
+
+
 @media (min-width: 1400px) {}
