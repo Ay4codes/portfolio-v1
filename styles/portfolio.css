@@ -1,0 +1,13 @@
+.portfolio-head-wrapper {
+    padding-top: 50px;
+}
+.portfolio-head-inner-wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+    column-gap: 100px;
+}
+.project-wrapper {
+    max-height: none;
+}

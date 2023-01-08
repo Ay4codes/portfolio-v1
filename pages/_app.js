@@ -4,6 +4,7 @@ import '../styles/home.css'
 import '../styles/footer.css'
 import '../styles/about.css'
 import '../styles/contact.css'
+import '../styles/portfolio.css'
 
 
 import { useState, useEffect } from 'react'
