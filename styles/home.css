@@ -175,6 +175,7 @@ html {
 }
 .expertise-wrapper img {
     width: 100px;
+    height: 100px;
     margin-inline: auto;
 }
 
@@ -244,7 +245,7 @@ html {
     /* height: 50%; */
 }
 .project-img-wrapper img {
-    /* height: 370px; */
+    height: 370px;
     max-width: 100%;
     border-radius: 20px;
 }
@@ -683,6 +684,7 @@ html {
     }
     .expertise-wrapper img {
         width: 130px;
+        height: 130px;
     }
     .expertise-wrapper h3 {
         font-size: 20px;

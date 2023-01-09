@@ -1,10 +1,11 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Project(props) {
     return (
         <div className="project-wrapper">
             <div className="project-img-wrapper">
-                <img src={`${props.img}`} />
+                <Image width={600} height={370} src={props.img} alt={props.alt} />
             </div>
             <div className="project-content-wrapper">
                 <button className="project-title-btn">{props.category}</button>
