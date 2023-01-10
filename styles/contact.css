@@ -156,6 +156,7 @@
 }
 .form-social-inner-wrapper img {
     width: 30px;
+    height: 30px;
     border-radius: 10px
 }
 .contact-info-wrapper {
@@ -257,6 +258,7 @@
     }
     .form-social-inner-wrapper img {
         width: 45px;
+        height: 45px;
     }
     .contact-info-wrapper h4 {
         font-size: 16px;
@@ -313,6 +315,7 @@
     }
     .form-social-inner-wrapper img {
         width: 50px;
+        height: 50px;
     }
     .form-socials-wrapper {
         margin-block: 60px;

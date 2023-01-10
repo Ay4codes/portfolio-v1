@@ -7,6 +7,7 @@
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
     column-gap: 100px;
+    row-gap: 80px;
 }
 .project-wrapper {
     max-height: none;

@@ -3,7 +3,7 @@ import SectionTitle from "../Global-components/SectionTitle"
 import Link from "next/link"
 import { Icon } from '@iconify/react';
 import {NameValidator, formatCompany, Emailvalidator, isEmpty } from "../../utils/validator.utils";
-
+import Image from "next/image";
 
 export default function Contact1stSection() {
     const [inputsFocus, setInputFocus] = useState({nameInput: false, emailInput: false, companyInput: false, subjectInput: false, messageInput: false})
@@ -182,10 +182,10 @@ export default function Contact1stSection() {
                                 <div className="form-socials-wrapper">
                                     <div>Follow me my journey</div>
                                     <div className="form-social-inner-wrapper">
-                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.linkedin.com/in/ayomide-ishola-b1240124a'}><img src="/linkedin.png" /></Link>
-                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.github.com/ay4codes'}><img src="/github.png" /></Link>
-                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.twitter.com/ay4codes'}><img src="/twitter.png" /></Link>
-                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.instagram.com/haryormeed_256/'}><img src="/instagram.svg" /></Link>
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.linkedin.com/in/ayomide-ishola-b1240124a'}><Image width={30} height={30} src="/linkedin.png" /></Link>
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.github.com/ay4codes'}><Image width={30} height={30} src="/github.png" /></Link>
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.twitter.com/ay4codes'}><Image width={30} height={30} src="/twitter.png" /></Link>
+                                        <Link target="_blank" rel="noopener noreferrer" href={'https://www.instagram.com/haryormeed_256/'}><Image width={30} height={30} src="/instagram.svg" /></Link>
                                     </div>
                                 </div>
                             </div>

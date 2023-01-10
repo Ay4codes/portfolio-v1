@@ -243,6 +243,8 @@ html {
 }
 .project-img-wrapper {
     /* height: 50%; */
+    display: flex;
+    justify-content: center;
 }
 .project-img-wrapper img {
     height: 370px;
