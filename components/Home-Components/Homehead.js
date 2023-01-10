@@ -2,6 +2,7 @@ import Link from "next/link"
 import Typewriter from 'typewriter-effect';
 import { useEffect } from "react";
 import Image from "next/image";
+import { Icon } from '@iconify/react';
 
 export default function Homehead() {
     return (
@@ -16,7 +17,7 @@ export default function Homehead() {
                             </div>
                             <h3 className="animate__swing">Hello! World</h3>
                             <h1>I’m Ayomide Ishola</h1>
-                            <p><span>{'<'}</span>Developer<span>{'>'}</span></p>
+                            <p><span><Icon icon="ic:round-less-than" /></span>Developer<span><Icon icon="ic:round-greater-than" /></span></p>
                         </div>
                         <div className="intro-msg-p">
                             <p>Am a Full Stack Developer, Specialised in frontend and backend development for complex scalable web apps. Over the years I've successfully developed custom solutions to solve challenges and engineered designs to meet predetermined functionality goals.</p>

@@ -46,9 +46,12 @@ html {
     color: #ff8c92;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
+    display: flex;
+    align-items: center;
 }
 .intro-container p span {
     color: #263238;
+    max-height: 60px;
 }
 .home-head-btm-btns-wrapper {
     display: flex;
@@ -458,9 +461,16 @@ html {
 }
 
 
-
+@media (max-width: 1300px) {
+    .intro-container p span {
+        max-height: 40px;
+    }
+}
 
 @media (max-width: 1020px) {
+    .intro-container p span {
+        max-height: 40px;
+    }
     .intro-msg-p {
         width: 100%;
     }
@@ -556,6 +566,11 @@ html {
 }
 
 @media (max-width: 800px) {
+    @media (max-width: 1300px) {
+        .intro-container p span {
+            max-height: 35px;
+        }
+    }
     .port-grid-wrapper {
         grid-template-columns: 1fr;
         row-gap: 70px;
