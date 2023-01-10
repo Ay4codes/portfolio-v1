@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Typewriter from 'typewriter-effect';
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function Homehead() {
     return (
@@ -35,7 +36,7 @@ export default function Homehead() {
                 </div>
             </div>
             <div className="home-head-btm-container">
-                <img width={150} height={120} src="/btm-pink.png" alt="btm-pink-icon" />
+                <Image width={150} height={120} src="/btm-pink.png" alt="btm-pink-icon" />
                 <div className={'typewriter_container'}>
                     <p className="">{"I’m"}</p>
                     <Typewriter
@@ -45,7 +46,7 @@ export default function Homehead() {
                         loop: true,}}
                     />
                 </div>
-                <img width={150} height={120} src="/btm-blue.png" alt="btm-blu-icon" />
+                <Image width={150} height={120} src="/btm-blue.png" alt="btm-blu-icon" />
             </div>
         </div>
     )
