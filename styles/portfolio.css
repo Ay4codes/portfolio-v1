@@ -17,22 +17,16 @@
     .portfolio-head-inner-wrapper {
         column-gap: 30px;
     }
-    .project-img-wrapper img {
-        height: 270px;
-    }
 }
 
 @media (max-width: 910px) {
-    .project-img-wrapper img {
-        height: 200px;
+    .nav-bar-main, .contact-1st-section-wrapper, .portfolio-head-wrapper, .about-2nd-section-wrapper, .home-head-wrapper, .home-second-section-wrapper, .home-3rd-section-wrapper, .home-4th-section-wrapper, .home-5th-section-wrapper, .about-head-wrapper {
+        padding-inline: 5%;
     }
 }
 
 @media (max-width: 870px) {
     .portfolio-head-inner-wrapper {
         grid-template-columns: 1fr;
-    }
-    .project-img-wrapper img {
-        height: 360px;
     }
 }
