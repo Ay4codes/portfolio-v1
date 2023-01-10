@@ -12,3 +12,27 @@
 .project-wrapper {
     max-height: none;
 }
+
+@media (max-width: 1150px) {
+    .portfolio-head-inner-wrapper {
+        column-gap: 30px;
+    }
+    .project-img-wrapper img {
+        height: 270px;
+    }
+}
+
+@media (max-width: 910px) {
+    .project-img-wrapper img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 870px) {
+    .portfolio-head-inner-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .project-img-wrapper img {
+        height: 360px;
+    }
+}
