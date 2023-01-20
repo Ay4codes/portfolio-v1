@@ -65,6 +65,7 @@
     transition: all .3s;
     user-select: none;
     cursor: text;
+    pointer-events: none;
 }
 .input-wrapper input:focus, .input-wrapper textarea:focus {
     outline: none;
