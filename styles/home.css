@@ -373,6 +373,7 @@ html {
 }
 .home-5th-content-wrapper {
     width: 350px;
+    line-height: 5rem;
 }
 .new_container {
     display: flex;
@@ -522,6 +523,7 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 44px;
     }
     .home-head-btm-btns-wrapper {
         gap: 10px;
