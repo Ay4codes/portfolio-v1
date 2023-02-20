@@ -180,7 +180,7 @@ export default function Contact1stSection() {
                             <div className="form-btm-content-wrapper">
                                 <div className="divider"></div>
                                 <div className="form-socials-wrapper">
-                                    <div>Follow me my journey</div>
+                                    <div>Follow my journey</div>
                                     <div className="form-social-inner-wrapper">
                                         <Link target="_blank" rel="noopener noreferrer" href={'https://www.linkedin.com/in/ayomide-ishola-b1240124a'}><Image width={30} height={30} src="/linkedin.png" /></Link>
                                         <Link target="_blank" rel="noopener noreferrer" href={'https://www.github.com/ay4codes'}><Image width={30} height={30} src="/github.png" /></Link>
