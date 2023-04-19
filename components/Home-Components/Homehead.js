@@ -20,7 +20,7 @@ export default function Homehead() {
                             <p><span><Icon icon="ic:round-less-than" /></span>Developer<span><Icon icon="ic:round-greater-than" /></span></p>
                         </div>
                         <div className="intro-msg-p">
-                            <p>Am a Full Stack Developer, Specialised in frontend and backend development for complex scalable web apps. Over the years I've successfully developed custom solutions to solve challenges and engineered designs to meet predetermined functionality goals.</p>
+                            <p>I’m a Full Stack Developer, Specialised in frontend and backend development for complex scalable web apps. Over the years I've successfully developed custom solutions to solve challenges and engineered designs to meet predetermined functionality goals.</p>
                         </div>
                         <div className="home-head-btm-btns-wrapper">
                             <Link href={'/contact'}>
