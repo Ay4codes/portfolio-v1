@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         {/* <!-- Primary Meta Tags --> */}
         <meta name="title" content="Ayomide Ishola || @ay4codes" />
-				<meta name="description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
+				<meta name="description" content="Full Stack Developer and Data Analyst with 3+ years of building experience." />
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.png" />
