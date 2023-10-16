@@ -42,14 +42,14 @@ function MyApp({ Component, pageProps }) {
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://ay4codes.vercel.app" />
 				<meta property="og:title" content="Ayomide Ishola || @ay4codes" />
-				<meta property="og:description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
+				<meta property="og:description" content="Full Stack Developer and Data Analyst with 3+ years of building experience." />
         <meta property="og:image" content="https://ay4codes.vercel.app/preview.png" />
 
         {/* <!-- Twitter --> */}
 				<meta property="twitter:card" content="summary_large_image" />
 				<meta property="twitter:url" content="https://ay4codes.vercel.app/" />
 				<meta property="twitter:title" content="Ayomide Ishola || @ay4codes" />
-				<meta property="twitter:description" content="Full Stack Developer and Data Analyst with 2+ years of building experience." />
+				<meta property="twitter:description" content="Full Stack Developer and Data Analyst with 3+ years of building experience." />
 				<meta property="twitter:image" content="https://ay4codes.vercel.app/preview.png" />
 
       </Head>
