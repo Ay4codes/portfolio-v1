@@ -26,7 +26,7 @@ export default function Homehead() {
                             <Link href={'/contact'}>
                                 <div className="contact-me-btn">Contact Me</div>
                             </Link>
-                            <Link target="_blank" rel="noopener noreferrer" href={'https://drive.google.com/file/d/18iTirNRuwqf6aH_cRQdXl3hg3B0_0Fzq/view?usp=drive_link'}>
+                            <Link target="_blank" rel="noopener noreferrer" href={'https://drive.google.com/file/d/1un76Op46r8hno1rU5b0ZpZ7OGCrSWEhw/view?usp=drivesdk'}>
                                 <div className="browse-cv-btn">Browse CV</div>
                             </Link>
                         </div>
