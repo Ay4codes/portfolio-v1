@@ -4,7 +4,7 @@ export default function Project(props) {
     return (
         <div className="project-wrapper">
             <div className="project-img-wrapper">
-                <img src={props.img} alt={props.alt} />
+                <img src={props.img} className="" alt={props.alt} />
             </div>
             <div className="project-content-wrapper">
                 <button className="project-title-btn">{props.category}</button>

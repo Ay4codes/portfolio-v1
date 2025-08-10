@@ -248,11 +248,14 @@ html {
     /* height: 50%; */
     display: flex;
     justify-content: center;
+    border: 1.5px solid #ff8c92;
+    border-radius: 12px;
 }
 .project-img-wrapper img {
     min-height: 100%;
     max-width: 100%;
-    border-radius: 20px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 .project-content-wrapper {
     padding-inline: 30px;
